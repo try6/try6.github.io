@@ -26,7 +26,8 @@ In addition to the biological and urban systems mentioned above, many other comp
 
 For the formula Y = aX^α, when the power index α = 1, it means Y and X are scaling in proportion, and Y increases linearly with X. A more common situation is α ≠ 1, in which Y and X are not proportionally scaling; we call this phenomenon the scale law. The difference between α being greater than 1 or less than 1 will result in fundamentally different system properties.
 
-The Scale Law Explains The Ultimate Life and Death of Systems
+## The Scale Law Explains The Ultimate Life and Death of Systems
+
 The key to the scale law is to introduce the perspective of "scale" into the system, allowing us to view complex systems from a completely new angle. We can answer questions like: Why does an elephant, weighing 10,000 times as much as a mouse, require only 1,000 times the drug dosage of a mouse? Why do large cities, compared to smaller cities, offer higher salaries and more opportunities?
 
 Many such scale scaling questions, seemingly unrelated, can find answers in the scale law. More importantly, the reason the scale law is so crucial is that it can reveal the direction of the evolution of complex systems and directly address the ultimate issue of life and death of the system.
