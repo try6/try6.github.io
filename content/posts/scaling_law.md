@@ -4,7 +4,7 @@ date: 2023-08-18T17:31:02+08:00
 draft: False
 description: "T"
 tags: ["Scaling law"]
-featured_image: '/images/scaling_law.png'
+featured_image: ''
 ---
 
 ## What is Scaling law

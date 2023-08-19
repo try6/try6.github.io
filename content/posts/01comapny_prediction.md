@@ -2,7 +2,7 @@
 title: "Hybrid Prediction Framework of Company Growth Based Scaling Law and Neural Network"
 date: 2023-08-01T17:29:42+08:00
 draft: False #if true, will not display in the web
-featured_image: '/images/company_prediction.png'
+featured_image: ''
 ---
 
 
