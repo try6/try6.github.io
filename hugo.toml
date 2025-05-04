@@ -1,4 +1,4 @@
-baseURL = 'https://try6.github.io/'
+baseURL = 'https://try6.github.io/try6/'
 languageCode = 'en-us'
 title = "Tao Ruyi's Blog"
 theme = "ananke"
