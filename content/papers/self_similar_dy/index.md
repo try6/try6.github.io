@@ -3,7 +3,7 @@ title: "Data driven modeling for self-similar dynamics"
 date: 2024-12-25T17:29:42+08:00
 draft: False #if true, will not display in the web
 tag: ['Self-similarity', 'Machine learning', 'Dynamics', 'Complex system modeling']
-featured_image: '/images/company_prediction.png'
+featured_image: '/images/self_similar_dy.jpg'
 type: paper
 ---
 
