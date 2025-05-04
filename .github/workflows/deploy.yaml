@@ -42,7 +42,7 @@ jobs:
         run: ls -la public  # 确认生成文件存在
 
       - name: Upload Artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
