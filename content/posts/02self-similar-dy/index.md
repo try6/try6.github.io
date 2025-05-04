@@ -1,5 +1,5 @@
 ---
-title: "Hybrid Prediction Framework of Company Growth Based Scaling Law and Neural Network"
+title: "Data driven modeling for self-similar dynamics"
 date: 2024-12-25T17:29:42+08:00
 draft: False #if true, will not display in the web
 tag: ['Self-similarity', 'Machine learning', 'Dynamics', 'Complex system modeling']

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Complex World, Simple Rules on Tao Ruyi&#39;s Blog</title>
-    <link>http://try6.github.io/</link>
-    <description>Recent content in Complex World, Simple Rules on Tao Ruyi&#39;s Blog</description>
+    <title>Posts on Tao Ruyi&#39;s Blog</title>
+    <link>http://try6.github.io/posts/</link>
+    <description>Recent content in Posts on Tao Ruyi&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Dec 2024 17:29:42 +0800</lastBuildDate><atom:link href="http://try6.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Dec 2024 17:29:42 +0800</lastBuildDate><atom:link href="http://try6.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data driven modeling for self-similar dynamics</title>
       <link>http://try6.github.io/posts/02self_similar_dy/</link>
@@ -34,15 +34,6 @@
       <description>&lt;h2 id=&#34;what-is-scaling-law&#34;&gt;What is Scaling law&lt;/h2&gt;
 &lt;p&gt;Scientists always expect to summarize the unified laws of the complex world. Physicists have come a long way in search of basic laws. As early as the 17th century, Kepler summarized the three major laws of planetary motion from Tycho&amp;rsquo;s astronomical observational data. However, for the complexity science, everything is just beginning.&lt;/p&gt;
 &lt;p&gt;The subject of complexity science is complex systems, and there is currently no perfect unified theory that encompasses all complex systems. However, there exists a theory with such potential, whether it is the richly diverse life system, cities with various forms around the world, or seemingly random economic systems, they all have a unified form of characterization —- this is the scaling law.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hybrid Prediction Framework of Company Growth Based Scaling Law and Neural Network</title>
-      <link>http://try6.github.io/papers/01comapny_prediction/</link>
-      <pubDate>Tue, 01 Aug 2023 17:29:42 +0800</pubDate>
-      
-      <guid>http://try6.github.io/papers/01comapny_prediction/</guid>
-      <description>Predicting company growth carries significant implications for strategic adjustment, operational decision-making, risk assessment, and loan eligibility reviews. Traditional attempts to model company growth either overly focus on theory, neglecting practical forecasting, or rely on time-series forecasting techniques without incorporating the inherent mechanisms of corporate growth. A recent study established a first-principles growth model for enterprises based on scaling laws, providing predictions superior to baseline methods regarding average business growth. In this paper, we propose a hybrid prediction framework for company growth, blending the growth equation of enterprises with time-series forecasting technology.</description>
     </item>
     
     <item>

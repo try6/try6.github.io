@@ -5,6 +5,16 @@
     <link>http://try6.github.io/tags/</link>
     <description>Recent content in Tags on Tao Ruyi&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://try6.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Aug 2023 17:31:02 +0800</lastBuildDate><atom:link href="http://try6.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>scaling law</title>
+      <link>http://try6.github.io/tags/scaling-law/</link>
+      <pubDate>Fri, 18 Aug 2023 17:31:02 +0800</pubDate>
+      
+      <guid>http://try6.github.io/tags/scaling-law/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
