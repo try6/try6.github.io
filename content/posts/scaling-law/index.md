@@ -1,5 +1,5 @@
 ---
-date: '2025-05-04T12:30:05+08:00'
+date: '2023-05-04T12:30:05+08:00'
 draft: false
 title: 'Scaling Law'
 type: post

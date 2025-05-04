@@ -2,39 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Complex World, Simple Rules on Tao Ruyi&#39;s Blog</title>
-    <link>https://try6.github.io/</link>
+    <link>http://localhost:55717/</link>
     <description>Recent content in Complex World, Simple Rules on Tao Ruyi&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 May 2025 12:30:05 +0800</lastBuildDate>
-    <atom:link href="https://try6.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Jan 2025 16:02:12 +0800</lastBuildDate>
+    <atom:link href="http://localhost:55717/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Scaling Law</title>
-      <link>https://try6.github.io/posts/scaling-law/</link>
-      <pubDate>Sun, 04 May 2025 12:30:05 +0800</pubDate>
-      <guid>https://try6.github.io/posts/scaling-law/</guid>
-      <description>&lt;h2 id=&#34;what-is-scaling-law&#34;&gt;What is Scaling law&lt;/h2&gt;&#xA;&lt;p&gt;Scientists always expect to summarize the unified laws of the complex world. Physicists have come a long way in search of basic laws. As early as the 17th century, Kepler summarized the three major laws of planetary motion from Tycho&amp;rsquo;s astronomical observational data. However, for the complexity science, everything is just beginning.&lt;/p&gt;&#xA;&lt;p&gt;The subject of complexity science is complex systems, and there is currently no perfect unified theory that encompasses all complex systems. However, there exists a theory with such potential, whether it is the richly diverse life system, cities with various forms around the world, or seemingly random economic systems, they all have a unified form of characterization —- this is the scaling law.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>When Renormalization Group Meets Machine Learning</title>
-      <link>https://try6.github.io/posts/renormalization-group/</link>
-      <pubDate>Sun, 04 May 2025 12:30:05 +0800</pubDate>
-      <guid>https://try6.github.io/posts/renormalization-group/</guid>
-      <description></description>
+      <title>Dynamical reversibility and a new theory of causal emergence based on SVD</title>
+      <link>http://localhost:55717/papers/dy_reversibility/</link>
+      <pubDate>Sat, 04 Jan 2025 16:02:12 +0800</pubDate>
+      <guid>http://localhost:55717/papers/dy_reversibility/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.nature.com/articles/s44260-025-00028-0&#34;&gt;link&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;The theory of causal emergence (CE) with effective information (EI) posits that complex systems can exhibit CE, where macro-dynamics show stronger causal effects than micro-dynamics. A key challenge of this theory is its dependence on coarse-graining method. In this paper, we introduce a fresh concept of approximate dynamical reversibility derived from the singular value decomposition(SVD) of the Markov chain and establish a novel framework for CE based on this. We find that the essence of CE lies in the presence of redundancy, represented by irreversible and correlated information pathways within the Markov dynamics. Therefore, CE can be quantified as the potential maximal efficiency increase for dynamical reversibility or information transmission. We also demonstrate a strong correlation between the approximate dynamical reversibility and EI, establishing an equivalence between the SVD and EI maximization frameworks for quantifying CE, supported by theoretical insights and numerical examples from Boolean networks, cellular automata, and complex networks. Importantly, our SVD-based CE framework is independent of specific coarse-graining techniques and effectively captures the fundamental characteristics of the dynamics.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Data driven modeling for self-similar dynamics</title>
-      <link>https://try6.github.io/papers/self_similar_dy/</link>
+      <link>http://localhost:55717/papers/self_similar_dy/</link>
       <pubDate>Wed, 25 Dec 2024 17:29:42 +0800</pubDate>
-      <guid>https://try6.github.io/papers/self_similar_dy/</guid>
-      <description>&lt;p&gt;Multiscale modeling of complex systems is crucial for understanding their intricacies. In recent years, data-driven multiscale modeling has emerged as a promising approach to tackle challenges associated with complex systems. Still, at present,this field is more focused on the prediction or control problems in specific fields, and there is no suitable framework to help us promote the establishment of complex system modeling theory. On the other hand, self-similarity is prevalent in complex systems, hinting that large-scale complex systems can be modeled at a reduced cost. In this paper, we introduce a multiscale neural network framework that incorporates self-similarity as prior knowledge, facilitating the modeling of self-similar dynamical systems. Our framework can discern whether the dynamics are self-similar to deterministic dynamics. For uncertain dynamics, it not only can judge whether it is self-similar or not, but also can compare and determine which parameter set is closer to self-similarity. The framework allows us to extract scale-invariant kernels from the dynamics for modeling at any scale. Moreover, our method can identify the power-law exponents in self-similar systems, providing valuable insights for the establishment of complex system modeling theory.&lt;/p&gt;</description>
+      <guid>http://localhost:55717/papers/self_similar_dy/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.sciencedirect.com/science/article/abs/pii/S016727892400455X&#34;&gt;[link]&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Multiscale modeling of complex systems is crucial for understanding their intricacies. In recent years, data-driven multiscale modeling has emerged as a promising approach to tackle challenges associated with complex systems. Still, at present,this field is more focused on the prediction or control problems in specific fields, and there is no suitable framework to help us promote the establishment of complex system modeling theory. On the other hand, self-similarity is prevalent in complex systems, hinting that large-scale complex systems can be modeled at a reduced cost. In this paper, we introduce a multiscale neural network framework that incorporates self-similarity as prior knowledge, facilitating the modeling of self-similar dynamical systems. Our framework can discern whether the dynamics are self-similar to deterministic dynamics. For uncertain dynamics, it not only can judge whether it is self-similar or not, but also can compare and determine which parameter set is closer to self-similarity. The framework allows us to extract scale-invariant kernels from the dynamics for modeling at any scale. Moreover, our method can identify the power-law exponents in self-similar systems, providing valuable insights for the establishment of complex system modeling theory.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Economics Meets Physics: An Introduction of Granular Model for Company Growth</title>
+      <link>http://localhost:55717/posts/granular_model/</link>
+      <pubDate>Wed, 04 Dec 2024 15:53:14 +0800</pubDate>
+      <guid>http://localhost:55717/posts/granular_model/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/BvD-oBcfVwCTCs3L8zFijQ&#34;&gt;[link]经济学遇上物理学：企业生长的颗粒模型简介&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;经济系统相比于物理系统具有更高的复杂性，那么适用于自然界的物理学的方法和思想，可以推广用于研究人类社会吗？一个叫做“经济物理学”的领域试图回答这一问题。经济物理学致力于从数据中挖掘经济系统的普适性规律。以企业为例，作为最小的经济活动单元，如何从繁杂的企业数据中洞察企业生长的规律？为什么小企业的增长速度通常比大企业更快？面对市场冲击，规模越大的公司遭受的波动更强吗？为什么一些企业的发展大起大落？企业生长的颗粒模型尝试从企业内部产品结构和丰富度角度建立模型，把握企业生长的深层规律。本文以企业生长的颗粒模型为例，介绍经济物理类方法的研究范式。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>When Renormalization Group Meets Machine Learning</title>
+      <link>http://localhost:55717/posts/renormalization-group/</link>
+      <pubDate>Mon, 04 Mar 2024 12:30:05 +0800</pubDate>
+      <guid>http://localhost:55717/posts/renormalization-group/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/iXtuEEEirn-6sLP68A9ycQ&#34;&gt;[link]重整化遇见机器学习：多尺度视角探索复杂系统内在的统一性&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;正因为“太小的结构我们看不清，太大的结构我们看不全”，所以我们需要使用重整化的方法，不断把系统的重要特征突出，把不重要的特征抹除，最终我们会发现，或许整个世界是由一个个有限的岛屿组成，每个系统都会属于一个岛屿，再无其他。本文从伊辛模型的重整化开始介绍了重整化群理论，然后系统梳理了重整化群和机器学习结合之处的系列研究，最后探讨了与重整化群殊途同归的多尺度动力学建模在探索非平衡动力系统方面的前沿进展，包括因果涌现理论、本征微观态理论、强化学习世界模型等。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hybrid Prediction Framework of Company Growth Based Scaling Law and Neural Network</title>
-      <link>https://try6.github.io/papers/company_prediction/</link>
+      <link>http://localhost:55717/papers/company_prediction/</link>
       <pubDate>Tue, 01 Aug 2023 17:29:42 +0800</pubDate>
-      <guid>https://try6.github.io/papers/company_prediction/</guid>
-      <description>&lt;p&gt;Predicting company growth carries significant implications for strategic adjustment, operational decision-making, risk assessment, and loan eligibility reviews. Traditional attempts to model company growth either overly focus on theory, neglecting practical forecasting, or rely on time-series forecasting techniques without incorporating the inherent mechanisms of corporate growth. A recent study established a first-principles growth model for enterprises based on scaling laws, providing predictions superior to baseline methods regarding average business growth. In this paper, we propose a hybrid prediction framework for company growth, blending the growth equation of enterprises with time-series forecasting technology. Specifically, we used a neural network model as a prediction method to make our framework more extensible.  This model captures both the intrinsic growth mechanisms of enterprises and the fluctuations in the external environment, demonstrating superior predictive performance compared to methods using time-series forecasting technology alone. Moreover, we found that the advantages of our framework are more prominent for long-range prediction tasks.&lt;/p&gt;</description>
+      <guid>http://localhost:55717/papers/company_prediction/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/BvD-oBcfVwCTCs3L8zFijQ&#34;&gt;[link]&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Predicting company growth carries significant implications for strategic adjustment, operational decision-making, risk assessment, and loan eligibility reviews. Traditional attempts to model company growth either overly focus on theory, neglecting practical forecasting, or rely on time-series forecasting techniques without incorporating the inherent mechanisms of corporate growth. A recent study established a first-principles growth model for enterprises based on scaling laws, providing predictions superior to baseline methods regarding average business growth. In this paper, we propose a hybrid prediction framework for company growth, blending the growth equation of enterprises with time-series forecasting technology. Specifically, we used a neural network model as a prediction method to make our framework more extensible.  This model captures both the intrinsic growth mechanisms of enterprises and the fluctuations in the external environment, demonstrating superior predictive performance compared to methods using time-series forecasting technology alone. Moreover, we found that the advantages of our framework are more prominent for long-range prediction tasks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Scaling Law</title>
+      <link>http://localhost:55717/posts/scaling-law/</link>
+      <pubDate>Thu, 04 May 2023 12:30:05 +0800</pubDate>
+      <guid>http://localhost:55717/posts/scaling-law/</guid>
+      <description>&lt;h2 id=&#34;what-is-scaling-law&#34;&gt;What is Scaling law&lt;/h2&gt;&#xA;&lt;p&gt;Scientists always expect to summarize the unified laws of the complex world. Physicists have come a long way in search of basic laws. As early as the 17th century, Kepler summarized the three major laws of planetary motion from Tycho&amp;rsquo;s astronomical observational data. However, for the complexity science, everything is just beginning.&lt;/p&gt;&#xA;&lt;p&gt;The subject of complexity science is complex systems, and there is currently no perfect unified theory that encompasses all complex systems. However, there exists a theory with such potential, whether it is the richly diverse life system, cities with various forms around the world, or seemingly random economic systems, they all have a unified form of characterization —- this is the scaling law.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

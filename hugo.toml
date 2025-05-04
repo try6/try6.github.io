@@ -8,7 +8,7 @@ theme = "ananke"
   description = ""
   show_hero = true
   show_post_summaries = true
-  recent_posts_number = 2
+  recent_posts_number = 3
   mainSections = ["posts"]
   background_image = "/images/bg.png"
 
