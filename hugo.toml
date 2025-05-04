@@ -1,3 +1,37 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://try6.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = "Tao Ruyi's Blog"
+theme = "ananke"
+
+[params]
+  author = "Tao Ruyi"
+  description = ""
+  show_hero = true
+  show_post_summaries = true
+  recent_posts_number = 2
+  mainSections = ["posts"]
+  background_image = "/images/bg.png"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+  pre = "<i class='fas fa-home'></i> "
+
+[[menu.main]]
+  name = "Posts"
+  url = "/posts/"
+  weight = 2
+  pre = "<i class='fas fa-pen'></i> "
+
+[[menu.main]]
+  name = "Papers"
+  url = "/papers/"
+  weight = 3
+  pre = "<i class='fas fa-file-pdf'></i> "
+    #[[menu.main]]
+    #parent = "Papers"
+    #name = "2024"
+    #url = "/papers/2024/"
+    #weight = 1
+

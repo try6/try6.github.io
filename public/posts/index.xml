@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Tao Ruyi&#39;s Blog</title>
+    <link>https://try6.github.io/posts/</link>
+    <description>Recent content in Posts on Tao Ruyi&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 May 2025 12:30:05 +0800</lastBuildDate>
+    <atom:link href="https://try6.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scaling Law</title>
+      <link>https://try6.github.io/posts/scaling-law/</link>
+      <pubDate>Sun, 04 May 2025 12:30:05 +0800</pubDate>
+      <guid>https://try6.github.io/posts/scaling-law/</guid>
+      <description>&lt;h2 id=&#34;what-is-scaling-law&#34;&gt;What is Scaling law&lt;/h2&gt;&#xA;&lt;p&gt;Scientists always expect to summarize the unified laws of the complex world. Physicists have come a long way in search of basic laws. As early as the 17th century, Kepler summarized the three major laws of planetary motion from Tycho&amp;rsquo;s astronomical observational data. However, for the complexity science, everything is just beginning.&lt;/p&gt;&#xA;&lt;p&gt;The subject of complexity science is complex systems, and there is currently no perfect unified theory that encompasses all complex systems. However, there exists a theory with such potential, whether it is the richly diverse life system, cities with various forms around the world, or seemingly random economic systems, they all have a unified form of characterization —- this is the scaling law.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>When Renormalization Group Meets Machine Learning</title>
+      <link>https://try6.github.io/posts/renormalization-group/</link>
+      <pubDate>Sun, 04 May 2025 12:30:05 +0800</pubDate>
+      <guid>https://try6.github.io/posts/renormalization-group/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
