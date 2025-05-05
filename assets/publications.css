@@ -1,0 +1,14 @@
+/* 文献卡片 */
+.publication-card {
+    transition: transform 0.3s ease;
+  }
+  
+  .publication-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* DOI 链接样式 */
+  .doi-link {
+    font-family: monospace;
+    color: #000000;
+  }

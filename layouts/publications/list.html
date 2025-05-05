@@ -1,0 +1,40 @@
+{{ define "main" }}
+<div class="ph3 bg-off-white">
+  <section class="center pt4 pb5 mw7">
+    <!-- <h1 class="f2 tc">{{ .Title }}</h1> -->
+    
+    <!-- 按新增的year字段分组 -->
+    {{ range (.Pages.GroupByParam "year" "desc") }}
+    <div class="mb5">
+      <h2 class="f3 b lh-title mb3">{{ .Key }}</h2>  <!-- 显示年份 -->
+      {{ range .Pages }}
+      <article class="bg-white br2 shadow-3 pa3 mb3">
+        <!-- 标题直接跳转link字段（如果存在） -->
+        <h3 class="f4 mt0">
+          <a href="{{ .Params.link | default .RelPermalink }}" 
+             class="link blue hover-dark-red"
+             {{ if .Params.link }}target="_blank" rel="noopener"{{ end }}>
+            {{ .Title }}
+          </a>
+        </h3>
+        <div class="f6 gray">
+          <span class="db mb1">
+            {{ .Params.authors }}, 
+            <i>{{ with .Params.journal }}{{ . }}{{ end }}, </i>
+            {{ with .Params.Year }}{{ .}}{{ end }}
+          </span>
+        </div>
+        <!-- <div class="mt2">
+          {{ with .Params.link }}
+          <a href="{{ . }}" class="dib mr3 blue dim" target="_blank">
+            <i class="fas fa-external-link-alt"></i> 原文链接
+          </a>
+          {{ end }}
+        </div> -->
+      </article>
+      {{ end }}
+    </div>
+    {{ end }}
+  </section>
+</div>
+{{ end }}

@@ -11,6 +11,12 @@ theme = "ananke"
   recent_posts_number = 3
   mainSections = ["posts"]
   background_image = "/images/bg.png"
+  
+  home_publications_count = 5 # 控制首页显示数量
+
+[frontmatter]
+  # 允许的文献参数
+  publications = ["authors", "journal", "year"]
 
 [[menu.main]]
   name = "Home"
@@ -35,3 +41,7 @@ theme = "ananke"
     #url = "/papers/2024/"
     #weight = 1
 
+[[menu.main]]
+  name = "Publication"
+  url = "/publications/"
+  weight = 3

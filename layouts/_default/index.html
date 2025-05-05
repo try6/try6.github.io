@@ -13,6 +13,11 @@
   {{ $papers_count := len $papers }}
 
 
+  {{ $publications := where (where .Site.RegularPages "Section" "publications") ".Params.featured" true }}
+  {{ $publications_count := len $publications }}
+
+
+
   {{ if and ($show_recent_posts) (compare.Ge $posts_count 1) }}
     <div class="pa3 pa4-ns w-100 w-70-ns center">
       <h2 class="f2 tc mb4">Posts</h2>
@@ -43,9 +48,9 @@
   {{ end }}
 
 
-  {{ if and ($show_recent_posts) (compare.Ge $papers_count 1) }}
+  <!-- {{ if and ($show_recent_posts) (compare.Ge $papers_count 1) }}
     <div class="pa3 pa4-ns w-100 w-70-ns center">
-      <h2 class="f2 tc mb4">Papers</h2>
+      <h2 class="f2 tc mb4">Publications</h2>
       {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
       <section class="w-100 mw8">
         {{ range first 3 $papers }}
@@ -56,8 +61,50 @@
       </section>
 
     </div>
+  {{ end }} -->
+
+
+    <!-- 在首页合适位置添加以下代码 -->
+  {{ $latest_featured := first 3 ($publications.ByDate.Reverse) }}
+{{ if $latest_featured }}
+<div class="pa3 pa4-ns w-100 w-70-ns center">
+  <h2 class="f2 tc">Publications</h2>
+  
+  {{ range $latest_featured }}
+  <section class="w-100 mw8">
+    <!-- <h3 class="f4 mt0">
+      <a href="{{ .Params.link | default .RelPermalink }}" 
+         {{ if .Params.link }}target="_blank" rel="noopener"{{ end }}
+         class="link blue hover-dark-red">
+        {{ .Title }}
+      </a>
+    </h3> -->
+    <!-- <div class="f6 gray">
+
+    </div> -->
+    <!-- {{ with .Params.link }} -->
+    <!-- {{ end }} -->
+
+    <div class="w-100 mb4 relative">
+      <a href="{{ .Params.link | default .RelPermalink }}" >[link]</a>
+      {{ with .Params.authors }}{{ . }}{{ end }}, 
+        
+      <i> {{ with .Params.journal }}{{ . }}{{ end }}, </i>
+          {{ with .Params.year }} {{ . }}{{ end }}
+      {{ .Render "summary-with-image" }}
+    </div>
+
+  </section>
   {{ end }}
+
+  <div class="tc mt3">
+    <a href="/publications/" class="btn raise">more</a>
+  </div>
+</div>
 {{ end }}
 
 
 
+{{ end }}
+
+ 
