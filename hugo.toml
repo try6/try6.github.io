@@ -30,11 +30,11 @@ theme = "ananke"
   weight = 2
   pre = "<i class='fas fa-pen'></i> "
 
-[[menu.main]]
-  name = "Papers"
-  url = "/papers/"
-  weight = 3
-  pre = "<i class='fas fa-file-pdf'></i> "
+#[[menu.main]]
+#  name = "Papers"
+#  url = "/papers/"
+#  weight = 3
+#  pre = "<i class='fas fa-file-pdf'></i> "
     #[[menu.main]]
     #parent = "Papers"
     #name = "2024"
