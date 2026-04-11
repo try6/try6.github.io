@@ -1,7 +1,7 @@
 ---
 title: "Scaling laws and a general theory for the growth of public companies"
 year: 2025
-authors: 'Jiang Zhang, Ruyi Tao, Veronica R. Cappelli, Christopher P. Kempes, Marcus J. Hamilton, Geoffrey B. West'
+authors: 'Ruyi Tao, Jiang Zhang, Veronica R. Cappelli, Christopher P. Kempes, Marcus J. Hamilton, Geoffrey B. West'
 journal: "Preprint"
 link: 'https://arxiv.org/abs/2109.10379'
 draft: false

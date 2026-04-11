@@ -1,10 +1,10 @@
 ---
-title: "Hybrid Prediction Framework of Company Growth Based Scaling Law and Neural Network"
-year: 2025
-authors: 'Ruyi Tao, Kaiwei Liu, Jing Xu, Jiang Zhang'
+title: "Predicting Company Growth using Scaling Theory Informed Machine Learning"
+year: 2026
+authors: 'Ruyi Tao, Veronica R. Cappelli, Kaiwei Liu, ,Marcus J. Hamilton, Christopher P. Kempes, Geoffrey B. West, Jiang Zhang*'
 journal: "Preprint"
 doi: "10.1234/abcd"
-link: 'https://mp.weixin.qq.com/s/BvD-oBcfVwCTCs3L8zFijQ'
+link: 'https://arxiv.org/abs/2410.17587'
 draft: false
 featured: true
 featured_image: '/images/company_prediction.jpg'
