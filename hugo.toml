@@ -11,6 +11,7 @@ theme = "ananke"
   recent_posts_number = 3
   mainSections = ["posts"]
   background_image = "/images/bg.png"
+  custom_css = ["home-research.css"]
   
   home_publications_count = 5 # 控制首页显示数量
 

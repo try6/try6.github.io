@@ -1,110 +1,87 @@
 {{ define "main" }}
-  <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links {{ $.Param "text_color" | compare.Default "mid-gray" }}">
+  <article class="home-intro cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links {{ $.Param "text_color" | compare.Default "mid-gray" }}">
     {{ .Content }}
   </article>
 
-  {{/* Define a section to pull recent posts from. For Hugo 0.20 this will default to the section with the most number of pages. */}}
-  {{ $show_recent_posts := site.Params.ananke.show_recent_posts }}
-
-  {{ $posts := where $.Site.RegularPages "Section" "posts" }}
-  {{ $posts_count := len $posts }}
-
-  {{ $papers := where $.Site.RegularPages "Section" "papers" }}
-  {{ $papers_count := len $papers }}
-
-
-  {{ $publications := where (where .Site.RegularPages "Section" "publications") ".Params.featured" true }}
-  {{ $publications_count := len $publications }}
-
-
-
-  {{ if and ($show_recent_posts) (compare.Ge $posts_count 1) }}
-    <div class="pa3 pa4-ns w-100 w-70-ns center">
-      <h2 class="f2 tc mb4">Posts</h2>
-      {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
-      <section class="w-100 mw8">
-        {{ range first 3 $posts }}
-          <div class="w-100 mb4 relative">
-            {{ .Render "summary-with-image" }}
-          </div>
-        {{ end }}
-      </section>
-
-      {{ if compare.Ge $posts_count (math.Add $n_posts 1) }}
-        <section class="w-100">
-          <h1 class="f3">{{ lang.Translate "more" }}</h1>
-          {{/* Now, range through the next four after the initial $n_posts items. Nest the requirements, "after" then "first" on the outside */}}
-          {{ range (collections.First 4 (collections.After $n_posts $posts))  }}
-            <h2 class="f5 fw4 mb4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "ml3" "mr3" }}">
-              <a href="{{ .RelPermalink }}" class="link black dim">
-                {{ .Title }}
-              </a>
-            </h2>
-          {{ end }}
-        </section>
+  <section class="home-portrait-section ph3 ph4-ns">
+    <div class="home-portrait-shell center tc">
+      {{ with .Params.profile_image }}
+        <img
+          src="{{ . | relURL }}"
+          alt="{{ $.Params.profile_image_alt | default $.Site.Params.author }}"
+          class="home-portrait-image"
+        >
+      {{ else }}
+        <div class="home-portrait-placeholder" aria-hidden="true">
+          <span class="home-portrait-placeholder-text">Your Photo</span>
+        </div>
       {{ end }}
-
     </div>
-  {{ end }}
-
-
-  <!-- {{ if and ($show_recent_posts) (compare.Ge $papers_count 1) }}
-    <div class="pa3 pa4-ns w-100 w-70-ns center">
-      <h2 class="f2 tc mb4">Publications</h2>
-      {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
-      <section class="w-100 mw8">
-        {{ range first 3 $papers }}
-          <div class="w-100 mb4 relative">
-            {{ .Render "summary-with-image" }}
-          </div>
-        {{ end }}
-      </section>
-
-    </div>
-  {{ end }} -->
-
-
-    <!-- 在首页合适位置添加以下代码 -->
-  {{ $latest_featured := first 3 ($publications.ByDate.Reverse) }}
-{{ if $latest_featured }}
-<div class="pa3 pa4-ns w-100 w-70-ns center">
-  <h2 class="f2 tc">Publications</h2>
-  
-  {{ range $latest_featured }}
-  <section class="w-100 mw8">
-    <!-- <h3 class="f4 mt0">
-      <a href="{{ .Params.link | default .RelPermalink }}" 
-         {{ if .Params.link }}target="_blank" rel="noopener"{{ end }}
-         class="link blue hover-dark-red">
-        {{ .Title }}
-      </a>
-    </h3> -->
-    <!-- <div class="f6 gray">
-
-    </div> -->
-    <!-- {{ with .Params.link }} -->
-    <!-- {{ end }} -->
-
-    <div class="w-100 mb4 relative">
-      <a href="{{ .Params.link | default .RelPermalink }}" >[link]</a>
-      {{ with .Params.authors }}{{ . }}{{ end }}, 
-        
-      <i> {{ with .Params.journal }}{{ . }}{{ end }}, </i>
-          {{ with .Params.year }} {{ . }}{{ end }}
-      {{ .Render "summary-with-image" }}
-    </div>
-
   </section>
+
+  {{ $researchTitle := .Params.research_title | default "Research Interests" }}
+  {{ $researchIntro := .Params.research_intro | default "My research sits at the intersection of theory, empirical data, and modeling. These three topics define the main directions of the work and leave room for a concise description of each theme." }}
+  {{ $researchEyebrow := .Params.research_eyebrow }}
+  {{ $researchInterests := .Params.research_interests | default (slice
+    (dict
+      "title" "Complex Systems Theory"
+      "tagline" "Universal laws, emergence, and collective behavior"
+      "body" "Use this space for a short paragraph on the theoretical questions you care about most. You can replace this prompt with 2 to 4 sentences on scaling, networks, universality, or the mechanisms behind complex adaptive systems."
+    )
+    (dict
+      "title" "Company Growth"
+      "tagline" "Firm dynamics, scaling patterns, and economic evolution"
+      "body" "Use this space to describe how you study company growth. A strong version usually mentions the data, the growth mechanisms, and the questions you ask about firm size, volatility, productivity, or long-term development."
+    )
+    (dict
+      "title" "Multi-Scale Modeling"
+      "tagline" "Bridging micro rules and macro patterns"
+      "body" "Use this space to explain how your work connects behavior across scales. You can summarize the modeling perspective, the systems you analyze, and how local interactions generate system-level regularities."
+    )
+  ) }}
+  {{ $researchCount := len $researchInterests }}
+  {{ if lt $researchCount 1 }}
+    {{ $researchCount = 1 }}
+  {{ end }}
+  {{ if gt $researchCount 4 }}
+    {{ $researchCount = 4 }}
   {{ end }}
 
-  <div class="tc mt3">
-    <a href="/publications/" class="btn raise">more</a>
-  </div>
-</div>
+  <section class="research-interests-section ph3 ph4-ns ph5-l pv4 pv5-l">
+    <div class="research-shell center mw9">
+      <div class="research-heading tc">
+        {{ with $researchEyebrow }}
+          <p class="research-eyebrow">{{ . }}</p>
+        {{ end }}
+        <h2 class="research-title">{{ $researchTitle }}</h2>
+        <p class="research-lead">{{ $researchIntro }}</p>
+      </div>
+
+      <div class="research-grid research-grid--{{ $researchCount }}">
+        {{ range $item := first 4 $researchInterests }}
+          <article class="research-card">
+            <div class="research-media">
+              {{ with $item.image }}
+                <img
+                  src="{{ . | relURL }}"
+                  alt="{{ $item.image_alt | default $item.title }}"
+                  class="research-image"
+                >
+              {{ else }}
+                <div class="research-image-placeholder" aria-hidden="true">
+                  <span class="research-placeholder-label">Image Placeholder</span>
+                  <span class="research-placeholder-topic">{{ $item.title }}</span>
+                </div>
+              {{ end }}
+            </div>
+            <div class="research-card-top">
+              <p class="research-tagline">{{ $item.tagline }}</p>
+            </div>
+            <h3 class="research-card-title">{{ $item.title }}</h3>
+            <p class="research-card-body">{{ $item.body }}</p>
+          </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
 {{ end }}
-
-
-
-{{ end }}
-
- 
