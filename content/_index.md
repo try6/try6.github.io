@@ -1,7 +1,7 @@
 ---
 title: "Complex World, Simple Rules"
 
-description: "I'm a PhD candicate student in Complex Science, Beijing Normal University."
+description: "I'm a PhD candicate at Complexity Science, Beijing Normal University."
 #  My research direction is multi-scale modeling of complex systems. "
 # I am interested in machine learning, dynamic systems, multi-scale modeling, scaling law and other interesting topics about complex systems."
 

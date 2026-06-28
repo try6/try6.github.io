@@ -4,6 +4,7 @@ draft: false
 title: 'Economics Meets Physics: An Introduction to Granular Models of Company Growth'
 math: true
 ---
+[Original Link](https://mp.weixin.qq.com/s/BvD-oBcfVwCTCs3L8zFijQ)
 
 Economic systems are more complex than physical systems. Can the methods and ideas of physics, which were developed for nature, be used to study human society? Econophysics tries to answer this question. It aims to find universal regularities in economic systems from data.
 

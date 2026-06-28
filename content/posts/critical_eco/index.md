@@ -5,6 +5,8 @@ title: 'The Trade-off Between Efficiency and Risk: Understanding the Economic Wo
 math: true
 ---
 
+[Original Link](https://mp.weixin.qq.com/s/x-Y0WjNSYYjVj6vS6uv9Yg)
+
 This article reviews self-organized criticality in economic and financial systems. It takes econophysics as the entry point and follows Jean-Philippe Bouchaud's 2025 review, *The Self-Organized Criticality Paradigm in Economics & Finance*, to summarize how the idea of self-organized criticality has developed in these fields.
 
 <!--more-->

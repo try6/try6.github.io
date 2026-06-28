@@ -5,6 +5,7 @@ title: 'When Renormalization Group Meets Machine Learning'
 type: post
 math: true
 ---
+[Original Link](https://mp.weixin.qq.com/s/iXtuEEEirn-6sLP68A9ycQ)
 
 Because structures that are too small are invisible to us, and structures that are too large cannot be fully observed, we need renormalization. It highlights the important features of a system and removes the irrelevant details. In the end, we may find that the world is made of a finite number of islands, and every system belongs to one of them.
 
