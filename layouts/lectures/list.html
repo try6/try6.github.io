@@ -1,0 +1,46 @@
+{{ define "main" }}
+<div class="ph3 bg-off-white">
+  <section class="center pt4 pb5 mw7">
+    <div class="mb4">
+      {{ with .Content }}
+        <div class="f4 lh-copy mid-gray nested-links">{{ . }}</div>
+      {{ end }}
+    </div>
+
+    {{ $lectures := .Pages.ByDate.Reverse }}
+    {{ if $lectures }}
+      <div class="lecture-list">
+        {{ range $lectures }}
+          <article class="bg-white br2 shadow-3 pa3 pa4-ns mb3">
+            <div class="f6 gray mb2">
+              <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+            </div>
+
+            <h2 class="f4 mt0 mb2 lh-title">
+              {{ .Title }}
+            </h2>
+
+            {{ if or .Params.event .Params.location }}
+              <p class="f6 gray mt0 mb3">
+                {{ with .Params.event }}<span>{{ . }}</span>{{ end }}
+                {{ if and .Params.event .Params.location }}<span> · </span>{{ end }}
+                {{ with .Params.location }}<span>{{ . }}</span>{{ end }}
+              </p>
+            {{ end }}
+
+            {{ with .Params.slides }}
+              <a class="dib link blue hover-dark-red f6 b" href="{{ . | relURL }}" target="_blank" rel="noopener">
+                Slides
+              </a>
+            {{ else }}
+              <span class="f6 gray">Slides coming soon</span>
+            {{ end }}
+          </article>
+        {{ end }}
+      </div>
+    {{ else }}
+      <p class="mid-gray">No lectures have been added yet.</p>
+    {{ end }}
+  </section>
+</div>
+{{ end }}

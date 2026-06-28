@@ -2,9 +2,9 @@
 title: "Predicting Company Growth using Scaling Theory Informed Machine Learning"
 year: 2026
 authors: 'Ruyi Tao, Veronica R. Cappelli, Kaiwei Liu, ,Marcus J. Hamilton, Christopher P. Kempes, Geoffrey B. West, Jiang Zhang*'
-journal: "Preprint"
-doi: "10.1234/abcd"
-link: 'https://arxiv.org/abs/2410.17587'
+journal: "npj Complexity"
+doi: "10.1038/s44260-026-00086-y"
+link: 'https://www.nature.com/articles/s44260-026-00086-y'
 draft: false
 featured: true
 featured_image: '/images/company_prediction.jpg'

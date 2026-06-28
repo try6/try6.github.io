@@ -16,6 +16,16 @@
           <span class="home-portrait-placeholder-text">Your Photo</span>
         </div>
       {{ end }}
+      {{ if or .Params.cv_file .Params.email }}
+        <div class="home-profile-links" aria-label="Profile links">
+          {{ with .Params.cv_file }}
+            <a class="home-profile-cv" href="{{ . | relURL }}" target="_blank" rel="noopener">CV</a>
+          {{ end }}
+          {{ with .Params.email }}
+            <span class="home-profile-email"> <a href="mailto:{{ . }}">{{ . }}</a></span>
+          {{ end }}
+        </div>
+      {{ end }}
     </div>
   </section>
 

@@ -46,3 +46,8 @@ theme = "ananke"
   name = "Publication"
   url = "/publications/"
   weight = 3
+
+[[menu.main]]
+  name = "Lectures"
+  url = "/lectures/"
+  weight = 4
