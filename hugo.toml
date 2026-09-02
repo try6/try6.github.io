@@ -1,7 +1,18 @@
 baseURL = 'https://try6.github.io/'
-languageCode = 'en-us'
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = false
 title = "Tao Ruyi's Blog"
 theme = "ananke"
+
+[languages]
+  [languages.en]
+    languageCode = 'en-US'
+    languageName = 'English'
+    weight = 1
+  [languages.zh-cn]
+    languageCode = 'zh-CN'
+    languageName = '中文'
+    weight = 2
 
 [params]
   author = "Tao Ruyi"
