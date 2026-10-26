@@ -7,7 +7,7 @@ description: "I'm a PhD candidate at Complexity Science, Beijing Normal Universi
 
 profile_image: "/images/profile.jpg"
 profile_image_alt: "Portrait of Tao Ruyi"
-cv_file: "/files/2606_CV_ruyi_tao.pdf"
+cv_file: "/files/2608_CV_ruyi_tao.pdf"
 email: "taoruyi@mail.bnu.edu.cn"
 
 research_title: "Research Interests"
